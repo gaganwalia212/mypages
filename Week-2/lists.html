@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lists</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1>Lists</h1>
+HTMLProvides three typles of lists:
+<ul>
+	<li>Unordered Lists</li>
+	<li>Ordered Lists</li>
+	<li>Description Lists</li>
+</ul>
+The symbols or numbering in front of list items are called <strong>list item marker</strong>
+<hr>
+
+<h3>Unordere Lists</h3>
+These list are used when the sequence of items does not matter<br>
+By default the list item marker is solid disk.<br>
+The following ingredients are required to make Garlic Bread:
+<ul>
+	<li>Bread</li>
+	<li>Butter(At room temperature)</li>
+	<li>Garlic</li>
+	<li>Herbs</li>
+	<li>Chillie Flakes</li>
+	<li>Motzrailla Cheese</li>
+</ul>
+<hr>
+
+<h3>Ordered Lists</h3>
+When the sequence of items matters.<br>By default the list item marker is the simple numbering system.
+<br>Countries in terms of GDP:
+<ol>
+	<li>United States</li>
+	<li>China</li>
+	<li>Japan</li>
+	<li>Germany</li>
+	<li>India</li>
+	<li>United Kingdom</li>
+	<li>France</li>
+	<li>Italy</li>
+	<li>Brazil</li>
+	<li>Canada</li>
+</ol>
+The ordered list also has various attributes-value,start,reversed
+<h4>Attribute-start</h4>
+Tells the numbering from where the list will start<br>
+It <strong>only accepte integral values</strong> irrespective of the list item marker<br>
+Best perfromances from Gryffindore House:
+<ol start="5">
+	<li>Hermoini Granger</li>
+	<li>Ginny Weasley</li>
+	<li>Nevil Longbottom</li>
+	<li>Ron Weasley</li>
+	<li>Harry Potter</li>
+</ol>
+
+<h4>Attribute-reversed</h4>
+Reverses the ordered list numbering <em>not the items</em><br>
+It is a boolean attribute.It does not accepts any value. Its default value if false and its value turns to be true when the attribute name is mentioned with &lt;ol&gt; element<br>
+Best performances from Gryffindore:
+<ol start="5" reversed>
+	<li>Harry Potter</li>
+	<li>Ron Weasley</li>
+	<li>Nevil Longbottom</li>
+	<li>Ginny Weasley</li>
+	<li>Hermoini Granger</li>
+</ol>
+
+<h4>Attribute-value</h4>
+This attribute is used to define a particular value of a list item marker.It is used with &lt;li&gt;<br>
+Note that the value of uocoming list markers will change accordingly<br>
+Asian countries in terms of population:
+<ol>
+	<li>China</li>
+	<li>India</li>
+	<li value="4">Indonesia</li>
+	<li>Pakistan</li>
+	<li value="8">Bangladesh</li>
+	<li value="11">Japan</li>
+</ol>
+<hr>
+
+<h3>Description Lists</h3>
+These lists qre used when you want to represent various terms with their definitions
+<br>The description lists uses the following tags:
+<ol>
+	<li>&lt;dl&gt;-The description list element</li>
+	<li>&lt;dt&gt;-Contains the description term</li>
+	<li>&lt;dd&gt;-Contains the description of the term</li>
+</ol>
+Remember:
+<ul>
+	<li>Unordered list-&lt;ul&gt;...&lt;li&gt;...&lt;/li&gt;...&lt;/ul&gt;</li>
+	<li>Ordered list-&lt;ol&gt;...&lt;li&gt;...&lt;/li&gt;...&lt;/ol&gt;</li>
+	<li>Description list-&lt;dl&gt;...&lt;dt&gt;...&lt;/dt&gt;...&lt;dd&gt;...&lt;/dd&gt;...&lt;/dl&gt;</li>
+</ul>
+My views on various subljects of B.Tech second semester:
+<dl>
+	<dt>Maths</dt>
+	<dd>I think Maths was interesting.Exploring differentiation,integration,vectors instigated my mind to visualize things</dd>
+	<dt>Manufacturing Process</dt>
+	<dd>My experience with this subject was a sober one. I was not very good at this subject<br>
+	While I found some of the shops like welding,foundry etc very interesting; I found it a little ardous task to learn some of the shops that i didn't attend</dd>
+	<dt>Environmental Studies</dt>
+	<dd>I guess it was a complete waste of time.No value incorporation..only thing required in this subject is CRAMMING</dd>
+</dl>
+NOTE:A term can have multiple descriptions and similarly multiple terms can have same description.
+<br>Some famous characters from HP series:
+<dl>
+	<dt>Harry Potter</dt>
+	<dt>Hermoini Granger</dt>
+	<dt>Ronn Weasley</dt>
+	<dd>One is from house Gryffindore. One is obedient,has good friend circle.One is a good wizard<br>
+	One has a significance role in defeting the Dark Lord</dd>
+	<dt>Prof.Minerva Mcgonical</dt>
+	<dd>She is the head of house Gryffindore.One of the oldest ,eminent and powerful wizards of Hogwarts</dd>
+	<dt>Severus Snape</dt>
+	<dd>He is a cunning man. He once was a death eater and supporter of Voldermort's theory of wizard supremacy.<br>
+	He was the one who told Voldermort about the prophecy</dd>
+	<dd>He is one of the most misunderstood charcters of the HP series.<br>
+		He had a childhood full of mostly bad memories.His search for honor made him join the death eaters which soon he realised was the biggest mistake of his life.<br>
+	He acted as a double agent for Dumbledore and was one of the bravest wizards as said by Harry Potter</dd>
+</dl>
+<hr>
+
+<h2>Nesting Lists</h2>
+List can include another listt i.e. they can be nested<br>
+Note:<em>The only element that can be plaed direcly inside an &lt;ol&gt; or &lt;ul&gt; is &lt;li&gt;</em><br>
+So any list must be nested as a list item in another list
+<br>Things to do:
+<ol>
+	<li>Making the bed</li>
+	<li>CLean the room</li>
+	<li>Have Breakfast</li>
+	<li>Looking after the dog
+		<ol>
+			<li>Bathing</li>
+			<li>Food</li>
+			<li>Walk</li>
+		</ol></li>
+	<li>Brings items from grocery:
+		<ul>
+			<li>Kellogs</li>
+			<li>Nutella</li>
+			<li>Green Tea</li>
+			<li>Turmeric</li>
+		</ul></li>
+	<li>Complete homework</li>
+	<li>Fill in the empty water bottles and keep them in the refrigirator</li>
+</ol>
+<br>
+It is possible to nest lists inside description list in the description term and description element.
+<br>Some South Asian Countries:
+<dl>
+	<dt><ol>
+		<li>Japan</li>
+		<li>Taiwan</li>
+		<li>Vietnam</li>
+	</ol></dt>
+	<dd><ul>
+		<li>ALl these countries are ASEAN countries</li>
+		<li>These countries a struggling against their common rival-CHINA in the South China Sea</li>
+	</ul></dd>
+</dl>
+<hr>
+<footer>I really hope that you got to know a great deal about lists in HTML
+</footer>
+</body>
+</html>
